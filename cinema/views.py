@@ -5,7 +5,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
 from cinema.models import Genre, Actor, CinemaHall, Movie, MovieSession, Order
-from cinema.permisions import IsAdminOrIfAuthenticatedReadOnly
+from cinema.permissions import IsAdminOrIfAuthenticatedReadOnly
 
 from cinema.serializers import (
     GenreSerializer,
